@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import assetBridge from "../"
+import assetBridge from "../assets/assetBridge.png"
 import { ProjectCards } from './ProjectCards'
 
 export const MyProjects = () => {
