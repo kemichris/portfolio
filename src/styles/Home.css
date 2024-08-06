@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+button {
+    font-family: "Poppins", sans-serif !important;
+}
+
+i, button {
+    cursor: pointer;
+}
+
+.main-flex{
+    display: flex;
+}
+
+/* ///////////// NAV BAR SECTION //////////////// */
+.nav-bar {
+    background-color: #141414;
+    padding: 3rem 1.5rem;
+    width: 25rem;
+}
+
+.nav-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-heading p {
+    font-size:  1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-heading small {
+    color: #ffffff99;
+}
+
+.nav-socials {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-socials a {
+    text-decoration:  none;
+    color: #ffffff99;
+    font-size: 1.5rem;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff99;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.home {
+    background-color: #353535;
+}
+
+.link i {
+    font-size:  1.4rem;
+}
+
+.link:hover {
+    background-color: #1E1E1E;
+}
+
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.theme-switcher button {
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    padding: 0.5rem 0.7rem;
+}
+
+.theme-switcher i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.theme-switcher button:hover {
+    background-color: #353535;
+}
