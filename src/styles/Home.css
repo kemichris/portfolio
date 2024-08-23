@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
 button {
     font-family: "Poppins", sans-serif !important;
 }
@@ -123,6 +128,10 @@ i, button {
 }
 
 /* ///////////// TOP CONTAINER //////////////// */
+.top-container {
+    margin-bottom: 4rem;
+}
+
 .available {
     display: flex;
     padding: 0 0.75rem;
@@ -202,4 +211,61 @@ i, button {
 .top-buttons button:hover {
     border: 1px solid #e1e1e199;
     transition: ease-in-out .5s;
+}
+
+/* ///////////// MY PROJECT //////////////// */
+.my-projects {
+    margin-bottom: 4rem;
+}
+.work-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.image-div {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 1rem;
+}
+
+.project-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1.3rem 0;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #e1e1e199;
+}
+
+.see-all {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.8rem;
+    border: 1px solid #3A3A3A;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+.see-all-link {
+    text-decoration: none;
+    color: white;
+}
+
+.see-all:hover {
+    border: 1px solid #e1e1e199;
+    transition: ease-in-out .5s;
+}
+
+.skills-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }

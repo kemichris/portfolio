@@ -8,11 +8,16 @@ export const MyProjects = () => {
     <div className='my-projects'>
         <h2>My Works</h2>
         <div className="work-cards">
-            <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="kasfksdjk" />
-
+            <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />
+            <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />
+            <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />
+            <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />
+        </div>
+        <div className='see-all'>
+        <Link className='see-all-link' to="/Project"> See all works</Link>
         </div>
         
-        <Link to="/Project"> See all works</Link>
+        
     </div>
   )
 }
