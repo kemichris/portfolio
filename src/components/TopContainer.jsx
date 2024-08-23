@@ -8,9 +8,8 @@ export const TopContainer = () => {
           <p>Available for work</p>
         </div>
 
-        <div className="Welcome">
-          <p>Hello, I am</p>
-          <p>Ekemini</p>
+        <div className="welcome">
+          <h1>Hello, I am Ekemini.</h1>
           <p>A frontend web developer</p>
         </div>
 
@@ -23,9 +22,9 @@ export const TopContainer = () => {
 
         <div className="top-buttons">
           <a href="http://" target="_blank" rel="noopener noreferrer">
-          <button><i class="fa-solid fa-download"></i> Download Resume</button>
+          <button className='download-btn'><i class="fa-solid fa-download"></i> Download Resume</button>
           </a>
-          <button><i class="fa-solid fa-copy"></i> Copy email</button>
+          <button className='copy-btn'><i class="fa-solid fa-copy"></i> Copy email</button>
         </div>
     </div>
   )

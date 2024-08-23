@@ -16,7 +16,6 @@ export const Home = () => {
             <MyProjects />
             <Skills />
           </div>
-
         </div>
       </main>
 
