@@ -269,3 +269,14 @@ i, button {
     gap: 2rem;
     margin-top: 2rem;
 }
+
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-card h4 {
+    color: white;
+    margin-top: 0.5rem;
+}
