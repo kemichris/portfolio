@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar'
 import { TopContainer } from "./components/TopContainer"
 import { MyProjects } from './components/MyProjects'
 import { Skills } from './components/Skills'
+import { CallToAction } from './components/CallToAction';
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
             <TopContainer />
             <MyProjects />
             <Skills />
+            <CallToAction />
           </div>
         </div>
       </main>
