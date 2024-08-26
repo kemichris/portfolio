@@ -16,7 +16,7 @@ export const Home = () => {
             <TopContainer />
             <MyProjects />
             <Skills />
-            <CallToAction />
+            <CallToAction/>
           </div>
         </div>
       </main>

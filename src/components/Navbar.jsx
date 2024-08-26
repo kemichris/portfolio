@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Logo from "../assets/logo.png"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export const Navbar = () => {
   const [theme, setTheme] = useState(true);
@@ -8,6 +8,8 @@ export const Navbar = () => {
   const toggleTheme = () => {
     setTheme(!theme)
   }
+
+  const location = useLocation();
 
 
 
@@ -26,10 +28,10 @@ export const Navbar = () => {
 
       <div className="nav-content">
 
-        <Link className='link home' to="/"><i class="fa-solid fa-house icon"></i> HomePage</Link>
-        <Link className='link' to="/about"><i class="fa-solid fa-user"></i> About</Link>
-        <Link className='link' to="/projects"><i class="fa-solid fa-briefcase"></i> Projects</Link>
-        <Link className='link' to="/contact"><i class="fa-solid fa-envelope"></i> Contact</Link>
+        <Link className={`link ${location.pathname === "/" ? "active" : ""}`} to="/"><i class="fa-solid fa-house icon"></i> HomePage</Link>
+        <Link className={`link ${location.pathname === "/about" ? "active" : ""}`} to="/about"><i class="fa-solid fa-user"></i> About</Link>
+        <Link className={`link ${location.pathname === "/projects" ? "active" : ""}`} to="/projects"><i class="fa-solid fa-briefcase"></i> Projects</Link>
+        <Link className={`link ${location.pathname === "/contact" ? "active" : ""}`} to="/contact"><i class="fa-solid fa-envelope"></i> Contact</Link>
       </div>
 
       <div className="theme-switcher">

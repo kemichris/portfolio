@@ -84,7 +84,7 @@ i, button {
     transition: ease-in-out 0.5s;
 }
 
-.home {
+.link.active {
     background-color: #353535;
 }
 
