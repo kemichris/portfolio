@@ -81,6 +81,7 @@ i, button {
     gap: 1rem;
     align-items: center;
     font-size: 1rem;
+    transition: ease-in-out 0.5s;
 }
 
 .home {
@@ -107,6 +108,7 @@ i, button {
     border: none;
     border-radius: 100%;
     padding: 0.5rem 0.7rem;
+    transition: ease-in-out .5s;
 }
 
 .theme-switcher i {
