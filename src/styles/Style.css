@@ -161,14 +161,14 @@ i, button {
     margin-bottom: 3rem;
 }
 
-.welcome h1 {
+h1 {
     color: white;
     font-size: 2.5rem;
     font-family: "Inter", sans-serif;
     margin-bottom: 1rem;
 }
 
-.welcome p {
+.welcome p, .showcase {
     color: #e1e1e199;
     font-size: 1.2rem;
 }
@@ -343,3 +343,5 @@ i, button {
 .action-text button:hover {
     filter: brightness(.7);
 }
+
+/* /////////////////////////// PROJECTS //////////////////////////////////// */
