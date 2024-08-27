@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { Navbar } from './components/Navbar'
+import { AboutTop } from './components/AboutTop'
+import { Skills } from './components/Skills'
 
 export const About = () => {
   return (
@@ -8,7 +10,8 @@ export const About = () => {
     <div className="main-flex">
      <Navbar/>
       <div className="main-content">
-        <About/>
+        <AboutTop/>
+        <Skills/>
       </div>
     </div>
   </main>

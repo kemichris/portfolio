@@ -1,5 +1,5 @@
 import React from 'react'
-import "./styles/Home.css";
+import "./styles/Style.css";
 import { Navbar } from './components/Navbar'
 import { TopContainer } from "./components/TopContainer"
 import { MyProjects } from './components/MyProjects'

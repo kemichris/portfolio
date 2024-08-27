@@ -8,7 +8,14 @@ export const MyProjects = () => {
     <div className='my-projects'>
         <h2>My Works</h2>
         <div className="work-cards">
-            <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />
+            <ProjectCards 
+            projectImg={assetBridge} 
+            projectName="Asset Bridge"
+            role = "Frontend" 
+            projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, 
+            order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." 
+            stack="HTML | CSS | Javascript"
+            />
             <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />
             <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />
             <ProjectCards projectImg={assetBridge} projectName="Asset Bridge" projectDsc="Revolutionizing dining with augmented reality (AR), by offering a seamless experience to view, order, and pay for food through a single mobile app, eliminating traditional hassles and enhancing efficiency." />

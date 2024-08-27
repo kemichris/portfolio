@@ -223,24 +223,45 @@ i, button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 3rem;
 }
 
 .image-div {
     width: 20rem;
     height: 14rem;
     border-radius: 1rem;
+    overflow: hidden;
+}
+
+.project-img {
+    transition: ease-in-out 0.5s;
+}
+
+.project-img:hover {
+    scale: .9;
 }
 
 .project-card h3 {
     color: #12c971;
     font-size: 1.2rem;
-    margin: 1.3rem 0;
+    margin: 1.3rem 0 0;
 }
 
-.project-card p {
+.role {
+    font-size: 0.875rem;
+    color: #ffff;
+}
+
+.desc {
+    margin-top: 1.3rem;
     font-size: 1rem;
     color: #e1e1e199;
+}
+
+.stack {
+    margin-top: 1rem;
+    color: #12c971;
 }
 
 .see-all {

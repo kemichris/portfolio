@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TopContainer = () => {
+export const AboutTop = () => {
 
   const copyEmail = () => {
     navigator.clipboard.writeText("ekeminichristopher123@gmail.com")
