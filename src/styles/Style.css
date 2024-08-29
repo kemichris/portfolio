@@ -126,7 +126,7 @@ i, button {
     margin-left: 18rem;
     background-color: #1A1A1A;
     padding: 4rem 5rem;
-    
+    width: 100%;
 }
 
 /* ///////////// TOP CONTAINER //////////////// */
@@ -168,7 +168,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.welcome p, .showcase {
+.welcome p, .showcase, .contact-p {
     color: #e1e1e199;
     font-size: 1.2rem;
 }
@@ -185,19 +185,19 @@ h1 {
     gap: 1rem;
 }
 
-.top-buttons button {
+.top-buttons button, .quick-actions button {
     padding: 1rem 1.25rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
     font-size: 1rem;
     color: white;
     border: none;
     transition: ease-in-out .5s;
 }
 
-.top-buttons a {
+.top-buttons a, .quick-actions a {
     text-decoration: none;
 }
 
@@ -205,14 +205,13 @@ h1 {
     background-color: #3A3A3A;
 }
 
-.top-buttons .copy-btn {
+.top-buttons .copy-btn, .quick-actions .copy-btn {
     background-color: transparent;
     border: 0.5px solid #3A3A3A;
 }
 
-.top-buttons button:hover {
-    border: 1px solid #e1e1e199;
-    transition: ease-in-out .5s;
+.top-buttons button:hover, .quick-actions button:hover {
+    border: 1px solid #e1e1e199
 }
 
 /* ///////////// MY PROJECT //////////////// */
@@ -344,4 +343,43 @@ h1 {
     filter: brightness(.7);
 }
 
-/* /////////////////////////// PROJECTS //////////////////////////////////// */
+/* /////////////////////////// CONTACT PAGE //////////////////////////////////// */
+.contact-info {
+    border-top: 1px solid #3A3A3A;
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+
+.contact-info-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.contact-info-flex p {
+    color: #e1e1e199;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-info-flex small {
+    color: white;
+    font-size: 1rem;
+}
+
+.quick-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
