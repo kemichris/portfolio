@@ -127,7 +127,7 @@ i, button {
     margin-left: 18rem;
     background-color: #1A1A1A;
     padding: 4rem 5rem;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* ///////////// TOP CONTAINER //////////////// */
@@ -228,13 +228,11 @@ h1 {
 }
 
 .image-div {
-    width: 20rem;
-    height: 14rem;
     border-radius: 1rem;
-    overflow: hidden;
 }
 
 .project-img {
+    width: 25rem;
     transition: ease-in-out 0.5s;
 }
 
@@ -438,3 +436,9 @@ form button {
 form button:hover {
     filter: brightness(.7);
 }
+
+
+
+
+
+/* /////////////////////////////////// MEDIA RESPONSIVENESS ////////////////////////////////////////// */

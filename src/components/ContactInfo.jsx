@@ -19,7 +19,7 @@ export const ContactInfo = () => {
                 </div>
             </div>
             <div className="quick-actions">
-                <a href="https://" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.link/ok1nn6" target="_blank" rel="noopener noreferrer">
                     <button className='download-btn'><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
                 </a>
                 <button className='copy-btn' onClick={copyEmail}><i class="fa-solid fa-copy"></i> Copy email</button>
