@@ -19,9 +19,7 @@ export const Contact = () => {
                             <p>Have a Project in mind? Let's Work Together!</p>
                             <form action="">
                                 <div className="form">
-
                                     <input type="text" name="" placeholder='Name' id="" />
-
                                     <input type="email" name="" placeholder='Email' id="" />
                                 </div>
                                 <textarea name="" id="" placeholder='Your Message'></textarea>

@@ -383,3 +383,36 @@ h1 {
     font-weight: 500;
     margin-bottom: 2rem;
 }
+
+.form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.form input, form textarea {
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid #3A3A3A;
+    background-color: #282828;
+    font-size: 1rem;
+    color: white;
+    
+}
+
+.form input::placeholder, form textarea::placeholder {
+    color: #e1e1e199;
+}
+
+.form input {
+    height: 2.5rem;
+}
+
+form textarea {
+    height: 5rem;
+}
+
+.form input:focus {
+    outline: none;
+}
