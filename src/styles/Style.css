@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif !important;
+    background-color: #1A1A1A;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -377,6 +378,11 @@ h1 {
     margin-top: 2rem;
 }
 
+form {
+    box-sizing: contain;
+    overflow: hidden;
+}
+
 .contact-form p {
     font-size: 1.5rem;
     color: white;
@@ -410,9 +416,25 @@ h1 {
 }
 
 form textarea {
-    height: 5rem;
+    height: 7rem;
 }
 
-.form input:focus {
+.form input:focus, form textarea:focus {
     outline: none;
+}
+
+form button {
+    background-color: #12c971;
+    border: none;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    filter: brightness(.7);
 }

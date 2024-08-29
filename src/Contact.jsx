@@ -23,6 +23,7 @@ export const Contact = () => {
                                     <input type="email" name="" placeholder='Email' id="" />
                                 </div>
                                 <textarea name="" id="" placeholder='Your Message'></textarea>
+                                <button type='submit'>Send Message</button>
 
                             </form>
                         </div>
