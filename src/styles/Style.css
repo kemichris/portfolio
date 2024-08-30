@@ -35,6 +35,7 @@ i, button {
     width: 15rem;
     position: fixed;
     height: 100vh;
+    transition: ease-in-out 0.5s;
 }
 
 .nav-heading {
@@ -127,7 +128,6 @@ i, button {
     margin-left: 18rem;
     background-color: #1A1A1A;
     padding: 4rem 5rem;
-    /* width: 100%; */
 }
 
 /* ///////////// TOP CONTAINER //////////////// */
@@ -306,7 +306,6 @@ h1 {
 .call-to-action {
     display: flex;
     margin-top: 5rem;
-    margin-right: 5rem;
     padding: 3rem  3rem;
     gap: 4rem;
     align-items: center;
@@ -442,3 +441,44 @@ form button:hover {
 
 
 /* /////////////////////////////////// MEDIA RESPONSIVENESS ////////////////////////////////////////// */
+
+@media (max-width: 1250px) {
+
+    /* ///////////// MY PROJECT //////////////// */
+
+    .work-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills-flex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:1000px) {
+    /* /////////////////////////// MAIN SECTION //////////////////////////////////// */
+    .main-content {
+        margin-left: 0;
+    }
+
+    /* ///////////// NAV BAR SECTION //////////////// */
+    .nav-bar {
+        width: 12rem;
+        left: -15rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 2.5rem;
+    }
+
+    .action-text p {
+        font-size: 1rem;
+    }
+
+    .action-text button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+
+}
