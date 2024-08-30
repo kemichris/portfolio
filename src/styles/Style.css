@@ -35,7 +35,9 @@ i, button {
     width: 15rem;
     position: fixed;
     height: 100vh;
-    transition: ease-in-out 0.5s;
+    transition: left ease-in-out 0.5s;
+    left: 0;
+    z-index: 2;
 }
 
 .nav-heading {
@@ -122,6 +124,32 @@ i, button {
     background-color: #353535;
 }
 
+.mobile-nav {
+    background-color: #141414;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mobile-nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem; 
+}
+
+.mobile-nav img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.mobile-nav i {
+    font-size: 2rem;
+    color: #12c971;
+}
+
 
 /* /////////////////////////// MAIN SECTION //////////////////////////////////// */
 .main-content {
@@ -132,7 +160,7 @@ i, button {
 
 /* ///////////// TOP CONTAINER //////////////// */
 .top-container {
-    margin-bottom: 4rem;
+   margin-bottom: 5rem;
 }
 
 .available {
@@ -341,6 +369,12 @@ h1 {
     filter: brightness(.7);
 }
 
+/* /////////////////////////// PROJECT //////////////////////////////////// */
+
+.showcase {
+    margin-bottom: 5rem;
+}
+
 /* /////////////////////////// CONTACT PAGE //////////////////////////////////// */
 .contact-info {
     border-top: 1px solid #3A3A3A;
@@ -459,14 +493,27 @@ form button:hover {
     /* /////////////////////////// MAIN SECTION //////////////////////////////////// */
     .main-content {
         margin-left: 0;
+        padding-top: 9rem;
     }
 
     /* ///////////// NAV BAR SECTION //////////////// */
-    .nav-bar {
+    .nav-bar.active {
         width: 12rem;
         left: -15rem;
+        transition: left ease-in-out 0.5s;
     }
 
+    .mobile-nav {
+        display: block;
+    }
+    
+
+    /* ///////////// TOP CONTAINER //////////////// */
+    /* .top-container {
+        padding-top: 7rem;
+    } */
+
+    /* ///////////// CALL TO ACTION //////////////// */
     .call-to-action h2 {
         font-size: 2.5rem;
     }

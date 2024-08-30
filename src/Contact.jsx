@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./styles/Style.css";
 import { Navbar } from './components/Navbar'
 import { ContactInfo } from './components/ContactInfo'
+import { MobileNav } from './components/MobileNav';
 
 export const Contact = () => {
+    const [isActive, setISActive] = useState(true);
+
+    const toggle = () => {
+        setISActive(!isActive)
+    }
     return (
         <div>
+            <header>
+                <MobileNav toggleMenu={toggle} />
+            </header>
+
             <main>
                 <div className="main-flex">
-                    <Navbar />
+                    <Navbar isActive={isActive} />
                     <div className="main-content">
                         <h1>Contact</h1>
                         <p className='contact-p'>Feel free to reach out personally, let's discuss your project ideas!</p>

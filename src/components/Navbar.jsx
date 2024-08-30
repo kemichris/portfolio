@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Logo from "../assets/logo.png"
 import { Link, useLocation } from 'react-router-dom'
 
-export const Navbar = () => {
+export const Navbar = ({isActive}) => {
   const [theme, setTheme] = useState(true);
 
   const toggleTheme = () => {
@@ -14,7 +14,7 @@ export const Navbar = () => {
 
 
   return (
-    <div className='nav-bar'>
+    <div className={isActive ? "active nav-bar": "nav-bar"}>
       <div className="nav-heading">
         <img src={Logo} alt="" />
         <p>Ekemini Christopher</p>
