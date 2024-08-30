@@ -312,6 +312,7 @@ h1 {
     transition: ease-in-out .5s;
 }
 
+/* ///////////// SKILLS //////////////// */
 .skills-flex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -497,8 +498,11 @@ form button:hover {
     }
 
     /* ///////////// NAV BAR SECTION //////////////// */
-    .nav-bar.active {
+    .nav-bar {
         width: 12rem;
+    }
+
+    .nav-bar.active {
         left: -15rem;
         transition: left ease-in-out 0.5s;
     }
@@ -506,12 +510,6 @@ form button:hover {
     .mobile-nav {
         display: block;
     }
-    
-
-    /* ///////////// TOP CONTAINER //////////////// */
-    /* .top-container {
-        padding-top: 7rem;
-    } */
 
     /* ///////////// CALL TO ACTION //////////////// */
     .call-to-action h2 {
@@ -528,4 +526,144 @@ form button:hover {
     }
 
 
+}
+
+@media (max-width: 700px) {
+
+    /* /////////////////////////// MAIN SECTION //////////////////////////////////// */
+    .main-content {
+        padding: 9rem 3rem 4rem;
+    }
+
+    .skills-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ///////////// CALL TO ACTION //////////////// */
+    .call-to-action {
+        padding: 1.5rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .action-text {
+        width: 100%;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .action-text p {
+        text-align: center;
+    }
+
+    .get-in-touch {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px) {
+    /* /////////////////////////// MAIN SECTION //////////////////////////////////// */
+    .main-content {
+        padding: 9rem 1.5rem 4rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ///////////// NAV BAR SECTION //////////////// */
+    .nav-bar {
+        padding: 2rem 1rem;
+    }
+
+    .nav-heading img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .nav-socials {
+        gap: 1rem;
+    }
+
+    .nav-socials a {
+        font-size: 1.2rem;
+    }
+
+    .link {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .link i {
+        font-size: 1rem;
+    }
+
+    .mobile-nav i {
+        font-size: 1.5rem;
+    }
+
+    /* ///////////// TOP CONTAINER //////////////// */
+    .welcome p, .showcase, .contact-p {
+        font-size: 0.875rem;
+    }
+
+    .short-abt p {
+        line-height: 1.5rem;
+        word-spacing: 0.5rem;
+    }
+
+    .top-buttons {
+        flex-direction: column;
+    }
+
+    .top-buttons button, .quick-actions button {
+        padding: 0.5rem 1rem;
+        width: fit-content;
+    }
+
+    /* ///////////// MY PROJECT //////////////// */
+    .project-img {
+        width: 15rem;
+    }
+
+    .see-all {
+        padding: 0.8rem 0;
+    }
+    
+    /* ///////////// SKILLS //////////////// */
+    .skills-card img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .skills-card h4 {
+        font-size: 0.875rem;
+    }
+
+
+    /* /////////////////////////// CONTACT PAGE //////////////////////////////////// */
+    .contact-info-flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2.5rem;
+    }
+
+    .quick-actions {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .contact-form p {
+        font-size: 1.2rem;
+    }
 }

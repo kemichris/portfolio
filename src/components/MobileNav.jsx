@@ -8,7 +8,7 @@ export const MobileNav = ({toggleMenu}) => {
         <div className='mobile-nav'>
             <div>
                 <img src={Logo} alt="Logo" />
-                <i class="fa-solid fa-qrcode" onClick={toggleMenu}></i>
+                <i class="fa-solid fa-bars-staggered" onClick={toggleMenu}></i>
             </div>
 
         </div>

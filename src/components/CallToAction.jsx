@@ -9,7 +9,7 @@ export const CallToAction = () => {
           <p>Do you need a beautiful, responsive and fully functional website? Let's work together! 
             Click the button below and let's bring your dreams to reality.
           </p>
-          <Link to="/contact">
+          <Link className='get-in-touch' to="/contact">
             <button>Get in touch</button>
           </Link>
         </div>
