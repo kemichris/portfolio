@@ -9,19 +9,24 @@ import { MobileNav } from './components/MobileNav';
 
 export const Home = () => {
   const [isActive, setISActive] = useState(true);
+  const [theme, setTheme] = useState(true);
+
+  const toggleTheme = () => {
+    setTheme(!theme)
+  }
 
   const toggle = ()=> {
     setISActive(!isActive)
   }
 
   return (
-    <div>
+    <div className={theme? "dark-theme" : "light-theme"}>
       <header>
         <MobileNav toggleMenu={toggle}/>
       </header>
       <main>
         <div className="main-flex">
-          <Navbar isActive={isActive} />
+          <Navbar isActive={isActive} theme={theme} toggleTheme={toggleTheme} />
           <div className="main-content">
             <TopContainer />
             <MyProjects />

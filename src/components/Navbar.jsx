@@ -1,13 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Logo from "../assets/logo.png"
 import { Link, useLocation } from 'react-router-dom'
 
-export const Navbar = ({isActive}) => {
-  const [theme, setTheme] = useState(true);
+export const Navbar = ({isActive, theme,toggleTheme}) => {
+  
 
-  const toggleTheme = () => {
-    setTheme(!theme)
-  }
+  
 
   const location = useLocation();
 
