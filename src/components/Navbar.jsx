@@ -21,8 +21,8 @@ export const Navbar = ({isActive}) => {
         <small>Frontend Developer</small>
         <div className="nav-socials">
           <a href="https://github.com/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-          <a href="https://github.com/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/kemichris" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/kemichris/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/kemi_chris1/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
 
