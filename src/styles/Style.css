@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif !important;
+    background-color: #1A1A1A;
     
 }
 
@@ -164,6 +165,7 @@ i, button {
     margin-left: 18rem;
     background-color: #1A1A1A;
     padding: 4rem 5rem;
+    width: 100%;
 }
 
 /* ///////////// TOP CONTAINER //////////////// */
