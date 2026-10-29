@@ -3,7 +3,7 @@ import { FaDotCircle } from "react-icons/fa";
 export function SectionHeader({ title, header, header2, description }) {
   return (
     <div className="space-y-4">
-      <p className="text-sm md:text-sm text-text-secondary flex items-center uppercase gap-2 font-extralight">
+      <p className="text-xs md:text-sm text-text-secondary flex items-center uppercase gap-2 font-extralight tracking-[0.4em]">
         <FaDotCircle className="text-blue" />
         {title}
       </p>

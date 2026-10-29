@@ -6,6 +6,21 @@ import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 import { Button } from "../common/Button";
 import { MobileMenu } from "./MobileMenu";
 
+const handleSectionClick = (event, id) => {
+  event.preventDefault();
+
+  const section = document.getElementById(id);
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    window.history.replaceState(null, "", `#${id}`);
+  }
+};
+
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,7 +35,7 @@ export function Navbar() {
     <>
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%] rounded-2xl bg-bg/74 border border-line backdrop-blur-lg hadow-lg shadow-black/22 flex items-center justify-between px-4 z-1000 ">
         <p className="text-text my-2">EC</p>
-        
+
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-4 md:items-center text-sm py-2">
           <li>
@@ -30,7 +45,11 @@ export function Navbar() {
           </li>
 
           <li>
-            <NavLink to="/about" className={navLinkClass}>
+            <NavLink
+              to="#about"
+              onClick={(event) => handleSectionClick(event, "about")}
+              className={navLinkClass}
+            >
               About
             </NavLink>
           </li>
@@ -47,15 +66,21 @@ export function Navbar() {
             </NavLink>
           </li>
 
-          <Button to='/contact' text="Let's talk"/>
-            
+          <Button to="/contact" text="Let's talk" />
         </ul>
 
         {/* Desktop Right */}
 
         {/* Mobile Menu Button */}
-        <button className="rounded-md p-2 text-text lg:hidden md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <HiOutlineXMark size={24} /> : <HiOutlineBars3 size={24} />}
+        <button
+          className="rounded-md p-2 text-text lg:hidden md:hidden"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? (
+            <HiOutlineXMark size={24} />
+          ) : (
+            <HiOutlineBars3 size={24} />
+          )}
         </button>
       </nav>
 
