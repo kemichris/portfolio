@@ -2,6 +2,7 @@ import { Reveal } from "../../components/common/Reveal";
 import { Hero } from "../../components/home/Hero";
 import { Marqueue } from "../../components/home/Marqueue";
 import { About } from "../../components/home/About";
+import { Skills } from "../../components/home/Skills";
 
 export function Home() {
   return (
@@ -13,9 +14,13 @@ export function Home() {
       <Reveal delay={0.15}>
         <Marqueue />
       </Reveal>
-      
+
       <Reveal delay={0.2}>
         <About />
+      </Reveal>
+      
+      <Reveal delay={0.2}>
+        <Skills />
       </Reveal>
     </>
   );
