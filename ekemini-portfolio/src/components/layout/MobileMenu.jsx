@@ -14,8 +14,8 @@ export function MobileMenu({ open, onClose }) {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed rounded top-20 z-50 h-content py-3 w-[80%] bg-bg/50 border border-line shadow-lg transition-transform duration-300 ease-in-out md:hidden ${
-          open ? "left-1/2 -translate-x-1/2" : "-translate-x-full"
+        className={`fixed rounded top-20 z-50 h-content py-3 w-[80%] bg-bg/90 border border-line shadow-lg transition-transform duration-300 ease-in-out md:hidden ${
+          open ? "left-1/2 -translate-x-1/2" : "-translate-x-full -left-full"}
         }`}
       >
         <div className="flex h-full flex-col px-6 py-4">

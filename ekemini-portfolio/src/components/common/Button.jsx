@@ -5,7 +5,7 @@ export function Button({ text, to }) {
   return (
     <Link
       to={to}
-      className="py-2 px-4 font-semibold bg-blue hover:bg-blue-hover rounded text-text flex items-center gap-2"
+      className="py-2 px-4 font-semibold bg-blue hover:bg-blue-hover hover:scale-95 rounded text-text flex items-center gap-2 transform transition-all duration-300"
     >
       {text}
       <FaArrowRight />

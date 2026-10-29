@@ -14,7 +14,7 @@ export function Navbar() {
   };
 
   const navLinkClass = ({ isActive }) =>
-    isActive ? "text-white font-semibold" : "text-muted hover:text-white";
+    isActive ? "text-white font-semibold" : "text-nav-text hover:text-white";
 
   return (
     <>

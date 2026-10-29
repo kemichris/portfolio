@@ -9,6 +9,7 @@
 
   /* Text colors */
   --color-text: #f3f6fa;
+  --color-text-secondary: #b9c1cc;
   --color-muted: #9299a6;
   --color-white: #ffffff;
   --color-nav-text: #aab0bb;
@@ -69,6 +70,7 @@
 @layer base {
   * {
     margin: 0;
+    font-family: manrope, sans-serif;
   }
 
   html {
@@ -79,6 +81,7 @@
     overflow-x: hidden;
     box-sizing: border-box;
     background-color: #08090b;
+    padding: 0 5rem;
   }
 
   button {
@@ -88,5 +91,33 @@
   p {
     line-height: 1.5;
     font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 0 2rem;
+    }
+  }
+}
+
+
+.flow-line {
+  animation: flow 3s linear infinite;
+}
+
+.flow-line-reverse {
+  animation-direction: reverse;
+  animation-duration: 3.5s;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -68;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-line {
+    animation: none;
   }
 }
