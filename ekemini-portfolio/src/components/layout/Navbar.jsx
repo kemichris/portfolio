@@ -3,24 +3,22 @@ import { useState } from "react";
 
 import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 
-
-// import { Button } from "../common/Button";
-
-// import { MobileMenu } from "./MobileMenu";
+import { Button } from "../common/Button";
+import { MobileMenu } from "./MobileMenu";
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-//   const closeMenu = () => {
-//     setMenuOpen(false);
-//   };
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   const navLinkClass = ({ isActive }) =>
     isActive ? "text-white font-semibold" : "text-muted hover:text-white";
 
   return (
     <>
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[80%] rounded-2xl bg-bg/74 border border-line backdrop-blur-lg hadow-lg shadow-black/22 flex items-center justify-between px-4 z-1000 ">
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%] rounded-2xl bg-bg/74 border border-line backdrop-blur-lg hadow-lg shadow-black/22 flex items-center justify-between px-4 z-1000 ">
         <p className="text-text my-2">EC</p>
         
         {/* Desktop Navigation */}
@@ -48,10 +46,9 @@ export function Navbar() {
               Project
             </NavLink>
           </li>
-        
-            <NavLink to="/contact" className='py-2 px-4 font-semibold bg-blue hover:bg-blue-hover rounded text-text' >
-              Let's talk
-            </NavLink>
+
+          <Button to='/contact' text="Let's talk"/>
+            
         </ul>
 
         {/* Desktop Right */}
@@ -63,7 +60,7 @@ export function Navbar() {
       </nav>
 
       {/* Mobile Menu */}
-      {/* <MobileMenu open={menuOpen} onClose={closeMenu} /> */}
+      <MobileMenu open={menuOpen} onClose={closeMenu} />
     </>
   );
 }
