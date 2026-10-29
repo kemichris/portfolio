@@ -12,7 +12,7 @@ export function Hero() {
           <FaDotCircle className="text-success animate-pulse" /> Available for
           work
         </p>
-        <h1 className="text-2xl md:text-5xl text-text mb-6">
+        <h1 className="text-3xl md:text-5xl text-text mb-6">
           I engineer digital experiences{" "}
           <span className="text-blue-bright">
             and the systems behind them.

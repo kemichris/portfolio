@@ -1,6 +1,6 @@
 export function HeroVisual() {
   return (
-    <div className="relative isolate h-140 w-full overflow-hidden rounded-[22px] border border-white/10 bg-project-visual">
+    <div className="relative isolate h-120 w-full overflow-hidden rounded-[22px] border border-white/10 bg-project-visual">
 
       {/* Background grid and blue glow */}
       <div
@@ -69,7 +69,7 @@ export function HeroVisual() {
       </div>
 
       {/* Central engineering node */}
-      <div className="absolute left-1/2 top-[49%] z-20 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-blue-bright/60 bg-hero-node-bg shadow-[0_0_35px_rgba(1,132,199,0.3)]">
+      <div className="absolute left-1/2 top-[50%] z-20 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-blue-bright/60 bg-hero-node-bg shadow-[0_0_35px_rgba(1,132,199,0.3)]">
         <span className="font-bold tracking-tight text-blue-bright">
           EC
         </span>
