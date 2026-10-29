@@ -10,6 +10,7 @@
   /* Text colors */
   --color-text: #f3f6fa;
   --color-text-secondary: #b9c1cc;
+  --color-text-tertiary: #777f8b;
   --color-muted: #9299a6;
   --color-white: #ffffff;
   --color-nav-text: #aab0bb;
@@ -48,6 +49,9 @@
   --color-line-strong: rgba(255, 255, 255, 0.18);
   --color-focus-border: rgba(53, 182, 245, 0.34);
   --color-contribution-active: rgba(1, 132, 199, 0.65);
+
+  /* fonts */
+  --font-mono: 'DM Mono', monospace;
 }
 
 /* Special transparent surfaces */
@@ -70,7 +74,7 @@
 @layer base {
   * {
     margin: 0;
-    font-family: manrope, sans-serif;
+    
   }
 
   html {
@@ -82,6 +86,7 @@
     box-sizing: border-box;
     background-color: #08090b;
     padding: 0 5rem;
+    font-family: 'Manrope', sans-serif;
   }
 
   button {
@@ -101,6 +106,7 @@
 }
 
 
+/* Flow Animation */
 .flow-line {
   animation: flow 3s linear infinite;
 }
