@@ -4,6 +4,7 @@ import { Marqueue } from "../../components/home/Marqueue";
 import { About } from "../../components/home/About";
 import { Skills } from "../../components/home/Skills";
 import { Approach } from "../../components/home/Approach";
+import { DevProcess } from "../../components/home/DevProcess";
 
 export function Home() {
   return (
@@ -26,6 +27,9 @@ export function Home() {
 
       <Reveal delay={0.2}>
         <Approach />
+      </Reveal>
+      <Reveal delay={0.2}>
+        <DevProcess />
       </Reveal>
     </>
   );
