@@ -44,7 +44,7 @@ export function Skills() {
   ];
 
   return (
-    <section className="mt-16 " id="skills">
+    <section className="mt-24 px-8 md:px-20" id="skills">
       <SectionHeader
         title="Technical Toolkit"
         header="Built across the"

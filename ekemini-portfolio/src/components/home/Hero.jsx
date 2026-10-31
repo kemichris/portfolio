@@ -6,7 +6,7 @@ import { HeroVisual } from "./HeroVisual";
 
 export function Hero() {
   return (
-    <section className="pt-30 grid grid-cols-1 gap-8 lg:grid-cols-2 md:gap-12 lg:gap-20">
+    <section className="pt-30 grid grid-cols-1 gap-8 lg:grid-cols-2 md:gap-12 lg:gap-20 px-8 md:px-20">
       <div className="">
         <p className="text-text-secondary text-sm flex items-center gap-2 mb-4">
           <FaDotCircle className="text-success animate-pulse" /> Available for

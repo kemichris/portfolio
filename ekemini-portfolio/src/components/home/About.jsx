@@ -20,7 +20,7 @@ export function About() {
         },
     ]
   return (
-    <section className="mt-20 pb-8" id="about">
+    <section className="mt-20 pb-8 px-8 md:px-20" id="about">
       <SectionHeader
         title="Identity"
         header="I don't just build interfaces."
