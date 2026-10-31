@@ -44,7 +44,7 @@ export function Skills() {
   ];
 
   return (
-    <section className="mt-24 px-8 md:px-20" id="skills">
+    <section className="py-24 px-8 md:px-20 pb-12" id="skills">
       <SectionHeader
         title="Technical Toolkit"
         header="Built across the"
